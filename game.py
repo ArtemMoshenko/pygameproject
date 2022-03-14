@@ -343,8 +343,7 @@ def game(mode):
               self.unit_fire = (x, y, self.board[x][y].fire)
               x, y = self.board[x][y].x, self.board[x][y].y
               fire = self.board[x][y].fire
-
-
+  
               for i in range(x - fire, x + fire + 1):
                   for j in range(y - fire, y + fire + 1):
                       if 0 <= i < self.width and 0 <= j < self.height:
